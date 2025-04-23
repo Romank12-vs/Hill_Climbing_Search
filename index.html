@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hill Climbing Algorithm</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 2rem;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    code {
+      background: #e8e8e8;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hill Climbing Search Algorithm</h1>
+    <p><strong>Hill Climbing</strong> is a heuristic search algorithm used for mathematical optimization problems. It is a local search algorithm that continuously moves in the direction of increasing value to find the peak of the mountain (maximum value).</p>
+
+    <h2>Key Concepts</h2>
+    <ul>
+      <li><strong>Current State:</strong> The current position in the search space.</li>
+      <li><strong>Neighboring States:</strong> Possible next moves from the current state.</li>
+      <li><strong>Objective Function:</strong> Evaluates each state to determine its value.</li>
+    </ul>
+
+    <h2>Algorithm Steps</h2>
+    <ol>
+      <li>Evaluate the current state.</li>
+      <li>Check all neighbors of the current state.</li>
+      <li>If a neighbor has a higher value, move to that neighbor.</li>
+      <li>Repeat until no neighbor has a better value (local maximum).</li>
+    </ol>
+
+    <h2>Drawbacks</h2>
+    <ul>
+      <li>Can get stuck in local maxima</li>
+      <li>May not find the global maximum</li>
+      <li>No backtracking allowed</li>
+    </ul>
+
+    <h2>Applications</h2>
+    <p>Used in optimization problems, game playing, artificial intelligence (AI) problems, and operations research.</p>
+
+    <footer>
+      &copy; 2025 | Hill Climbing Algorithm Explained
+    </footer>
+  </div>
+</body>
+</html>
